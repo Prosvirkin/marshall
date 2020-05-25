@@ -1,0 +1,12 @@
+include goods.pug
+
+.container 
+  .row
+    for i in goods 
+      .col-lg-3.col-md-6.col-sm-12
+        a(href="#" class="default-card")
+          .default-card__img-wrapper
+            img(src=i.img class="default-card__img")
+          span.default-card__title=i.name 
+          span.default-card__show show more 
+          

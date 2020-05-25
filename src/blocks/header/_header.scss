@@ -1,0 +1,144 @@
+header {
+  padding: 50px 0;
+}
+
+.logo {
+  z-index: 901;
+  a {
+    display: block;
+  }
+  img {
+    max-width: 200px;
+  }
+}
+
+.header-menu {
+  ul {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    float: right;
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        // font-family: "Druk Wide Bold";
+        font-family: $ff-Inter;
+        color: $color-white;
+        font-size: 18px;
+        font-weight: 800;
+        &:hover {
+          color: $color-yellow;
+        }
+      }
+    }
+  }
+}
+
+.header-menu__mobile__sandwich {
+  position: relative;
+  float: right;
+  z-index: 901;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  padding-top: 5px;
+  margin-right: 10px;
+}
+
+.sw-top {
+  position: relative;
+  top: 0;
+  width: 30px;
+  height: 4px;
+  background: $color-white;
+  border-radius: 1px;
+  transition: transform 0.5s, top 0.2s;
+}
+
+.sw-bottom {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  top: 5px;
+  background: $color-white;
+  border-radius: 1px;
+  transition: transform 0.5s, top 0.2s;
+  transition-delay: 0.2s, 0s;
+}
+
+.sw-footer {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  top: 10px;
+  background: $color-white;
+  border-radius: 1px;
+  transition: all 0.5s;
+  transition-delay: 0.1s;
+}
+
+.header-menu__mobile__sandwich.active .sw-top {
+  top: 4px;
+  transform: rotate(140deg);
+}
+
+.header-menu__mobile__sandwich.active .sw-bottom {
+  top: 0px;
+  transform: rotate(-140deg);
+}
+
+.header-menu__mobile__sandwich.active .sw-footer {
+  opacity: 0;
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  z-index: 900;
+  background-color: rgba(26, 31, 36, 1);
+  padding: 35% 15px 0 15px;
+  transition: 0.5s;
+  &.show {
+    display: block;
+  }
+  ul {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    li {
+      display: block;
+      width: 100%;
+      min-height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid $color-white;
+      &:last-child {
+        border: none;
+      }
+      &:hover {
+        background-color: $color-yellow;
+        color: $color-yellow;
+        border-color: $color-yellow;
+        a {
+          color: $color-black;
+        }
+      }
+      a {
+        font-family: $ff-Inter;
+        color: $color-white;
+        font-size: 18px;
+        font-weight: 800;
+      }
+    }
+  }
+}

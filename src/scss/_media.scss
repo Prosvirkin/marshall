@@ -1,0 +1,56 @@
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .main-block h1 {
+    font-size: 1.8em;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+  .main-block h1 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+  }
+
+  .main-slider__pagination {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .main-block {
+    margin-bottom: 100px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+  .main-block__video-preview {
+    padding: 0;
+  }
+
+  .main-block__video-play-button {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,49 @@
+extends ../layout.pug
+
+block content
+  //- .main-block__bcg
+  .main-block
+    .container
+      h1
+        | MAKING MUSIC 
+        br
+        | WITH MARSHALL
+      .row
+        .js-main-slider
+          div
+            .main-block__desc.col-lg-5.col-md-6
+              p 
+                | We’re helping you learn music theory and essential techniques to take you from beginner to pro. Whether you’ve just picked up an instrument for the first time or are looking to fill in some gaps in your playing, Making Music with Marshall has everything to give you a helping hand. 
+              p
+                | The series starts at the very beginning by explaining beats and rhythm, before moving on to cover chords, scales, song structures and much more. Best of all, it's all totally free.
+              a(href="#").default-button explore
+            .main-block__video.col-lg-7.col-md-6
+              a(href="#" class="main-block__video-play-button js-modal-video" data-toggle="modal" data-target="js-modal-video") 
+                img(src="/img/play.png")
+              img(src="/img/video_preview.png" class="main-block__video-preview")  
+          div
+            .main-block__desc.col-lg-5.col-md-6
+              p 
+                | We’re helping you learn music theory and essential techniques to take you from beginner to pro. Whether you’ve just picked up an instrument for the first time or are looking to fill in some gaps in your playing, Making Music with Marshall has everything to give you a helping hand. 
+              a(href="#").default-button explore
+            .main-block__video.col-lg-7.col-md-6
+              img(src="/img/video_preview.png" class="main-block__video-preview")
+          div
+            .main-block__desc.col-lg-5.col-md-6
+              p 
+                | The series starts at the very beginning by explaining beats and rhythm, before moving on to cover chords, scales, song structures and much more. Best of all, it's all totally free. 
+              a(href="#").default-button explore
+            .main-block__video.col-lg-7.col-md-6
+              img(src="/img/video_preview.png" class="main-block__video-preview")
+  .goods-category
+    include ../../blocks/cards/cards.pug
+
+block modals  
+  div(class="modal fade video-modal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true" id="js-modal-video")
+    div(class="video-modal__wrapper" role="document")
+      .modal-body
+        iframe(width="100%" height="100%" src="https://www.youtube.com/embed/dkNfNR1WYMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
+
+        
+      
