@@ -14,7 +14,7 @@ $(function () {
   });
 
   $(".js-mobile-menu-open").click(function () {
-    $(".header-menu__mobile__sandwich").toggleClass("active");
+    $(".header-menu-mobile__sandwich").toggleClass("active");
     $(".mobile-menu").toggleClass("show");
   });
 });

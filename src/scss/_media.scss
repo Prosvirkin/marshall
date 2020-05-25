@@ -24,10 +24,22 @@
   .main-block {
     margin-bottom: 100px;
   }
+
+  .default-card__img-wrapper img {
+    max-height: 130px;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (max-width: 1200px) {
+  .header-menu__nav {
+    display: none;
+  }
+
+  .header-menu-mobile {
+    display: block;
+  }
+
   .main-block__video-preview {
     padding: 0;
   }
