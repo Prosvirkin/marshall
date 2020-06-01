@@ -9,7 +9,9 @@ $(function () {
     },
   });
 
-  $(".js-modal-video").click(function () {
+  $(".js-modal-video").on("click", function (event) {
+    var link = $(this).data("link");
+    $(".video-modal").find("iframe").attr("src", link);
     $(".video-modal").modal("show");
   });
 

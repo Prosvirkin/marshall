@@ -1,3 +1,6 @@
 import "./scss/import.scss";
 
-console.log(process.env.NODE_ENV);
+// function requireAll(r) {
+//   r.keys().forEach(r);
+// }
+// requireAll(require.context("./", true, /\.pug$/));

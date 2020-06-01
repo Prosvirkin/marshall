@@ -1,6 +1,6 @@
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) {
-  .main-block h1 {
+  .main-slider h1 {
     font-size: 1.8em;
   }
 }
@@ -11,7 +11,7 @@
 
 // Large devices (desktops, 992px and up)
 @media (max-width: 992px) {
-  .main-block h1 {
+  .main-slider h1 {
     font-size: 1.8em;
     margin-bottom: 30px;
   }
@@ -40,11 +40,11 @@
     display: block;
   }
 
-  .main-block__video-preview {
+  .main-slider__video-preview {
     padding: 0;
   }
 
-  .main-block__video-play-button {
+  .main-slider__video-play-button {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
